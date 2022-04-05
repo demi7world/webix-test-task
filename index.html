@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.webix.com/edge/webix.js" type="text/javascript"></script>
+    <script type="text/javascript" src="./testdata.js"></script>
+    <script type="text/javascript" src="./index.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.webix.com/edge/webix.css" type="text/css">
+
+    <style>
+
+        .header {
+            background: #657584;
+        }
+
+        .app_name .webix_el_box,
+        .profilebtn .webix_button,
+        .profilebtn .wxi-user:before {
+            color: white;
+        }
+
+        .app_name .webix_el_box {
+            font-size: 16px;
+        }
+
+        .side .webix_view {
+            background: #eee;
+        }
+        
+        .connection,
+        .footer .webix_template {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .connection .webix_el_box {
+            font-weight: 400;
+            color: green;
+        }
+
+        .connection::before {
+            color: green;
+        }
+
+        .line {
+            background: green;
+        }
+
+        .form_title 
+        .webix_view.webix_control.webix_el_label 
+        .webix_el_box {
+            font-weight: 400;
+        }
+
+    </style>
+
+    <title>My First Webix App</title>
+</head>
+<body>
+
+    <script type="text/javascript" charset="utf-8">
+
+        webix.ui({
+            type:{height:"100%"},
+            rows:[header, main, footer]
+        });
+
+    </script>
+</body>
+</html>
